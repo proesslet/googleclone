@@ -1,0 +1,114 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #202124;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+}
+nav a {
+    color: #BCC0C5;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.8rem;
+}
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ------------- Main Content ------------- */
+.main-content{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+.google-text{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+.searchbox {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+#searchinput {
+    border: 0.5px solid #fff;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    grid-column: span 2;
+    background-color: #202124;
+    border-radius: 25px;
+}
+#searchinput:hover {
+    background-color: #303134;
+    cursor: text;
+    border: none;
+    box-shadow: -10px -10px 5 #303134;
+}
+.searchbuttonsection{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.searchbutton {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: 0px solid #fff;
+    border-radius: 5px;
+    background-color: #303134;
+    color: #fff;
+}
+.searchbutton:hover {
+    border: 0.5px solid #fff;
+    cursor: pointer;
+}
+#leftsearchbutton {
+    margin-left: auto;
+    margin-right: 0px;
+    width: auto;
+    min-width: 100px;
+}
+#rightsearchbutton {
+    margin-left: 0px;
+    margin-right: auto;
+    width: auto;
+}
+
+/* ------------ Footer ------------ */
+footer {
+    background-color: #171717;
+    color: #BCC0C5;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+    height: 50px;
+    font-size: 0.8rem;
+}
+footer section {
+    display: flex;;
+    padding: 10px;
+}
+footer section p {
+    margin: auto;
+    padding: 10px;
+}
